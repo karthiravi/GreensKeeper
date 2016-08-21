@@ -65,7 +65,7 @@ header .circle:hover{
                                                               /*header ends*/
                                                                /*nav starts*/
 nav{
-    min-height: 21px;
+    min-height: 20px;
 }
 nav .btn-1{
     width: 100px;    
