@@ -5,20 +5,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">        
-        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
-        
+    <!--    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">  -->
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" /> 
+
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-        
         <link href="css/addition.css" rel="stylesheet" type="text/css" />
         
-   <!--     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <script src="bootstrap/js/bootstrap.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>  -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        
+    <!--    <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>  -->
     </head>
     <body>
 <!--main-header section starts here-->
@@ -91,7 +88,8 @@
 <!--End of navigation section-->
 
 <!--carousel starts-->
-        
+        <div class="container-fluid">
+        <div class="row">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Carousel items -->
             <div class = "carousel-inner">
@@ -105,7 +103,7 @@
 
                 <div class = "item">
                     <img src = "image/2.jpg" alt = "Second slide">
-                    <div class="carousel-caption c">
+                    <div class="carousel-caption">
                         <h3><b>Professional Gardening,Landscaping <br>& Maintenance Services</b></h3>
                         <p>Lorem ipsum dolor sit amet.</p>
                     </div>
@@ -125,7 +123,8 @@
                 <!-- Controls buttons -->
             </div>
         </div>
-        
+        </div>
+        </div>
 <!--carousel ends-->
 <!--estimation form starts-->
         <div class="container-fluid" id="estimation">
@@ -189,11 +188,11 @@
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <span class="fa fa-envira c circle"></span><strong>Heading</strong>
+                                    <span class="fa fa-envira c circle"></span><strong class="m-l-1">Heading</strong>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 m-l">
+                                <div class="col-lg-12 col-md-12 col-sm-12 m-l-2">
                                     <h3>Aenean imperdiet lacus</h3>
                                     <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                                         Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur 
@@ -203,11 +202,11 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <span class="fa fa-flag c circle"></span><strong>Heading</strong>
+                                    <span class="fa fa-flag c circle"></span><strong class="m-l-1">Heading</strong>
                                 </div>
                             </div>
                              <div class="row">
-                                 <div class="col-lg-12 col-md-12 col-sm-12 m-l">
+                                 <div class="col-lg-12 col-md-12 col-sm-12 m-l-2">
                                      <h3>Quisque tempor dolor <span class="c">sit amet</span> tellus malesuada</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                                         Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur 
@@ -483,16 +482,77 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-12">
-                                    <span class="m-l glyphicon glyphicon-triangle-bottom"></span>
-                                    <div class="row">
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                                        <img src="image/couple.jpg" class="img-circle" height="50" width="50" alt="image">
-                                    </div>
-                                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                                        <b>Something goes here</b><br>
-                                        <span class="c">content</span>
-                                    </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 l">
+                                    <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+                                 <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                            <div class="item active">                                                    
+                                                <div class="row">
+                                                    <span class="m-l glyphicon glyphicon-triangle-bottom"></span>
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                            <img src="image/couple.jpg" class="img-circle" height="50" width="50" alt="image">
+                                                        </div>
+                                                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                                            <b>Something goes here</b><br>
+                                                            <span class="c">content</span>
+                                                        </div>
+                                                    </div>
+                                                </div>                                                    
+                                            </div>
+                                            <div class="item">
+                                                <div class="row">
+                                                    <span class="m-l glyphicon glyphicon-triangle-bottom"></span>
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                            <img src="image/couple.jpg" class="img-circle" height="50" width="50" alt="image">
+                                                        </div>
+                                                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                                            <b>Something goes here</b><br>
+                                                            <span class="c">content</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">                                                    
+                                                <div class="row">
+                                                    <span class="m-l glyphicon glyphicon-triangle-bottom"></span>
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                                            <img src="image/couple.jpg" class="img-circle" height="50" width="50" alt="image">
+                                                        </div>
+                                                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                                            <b>Something goes here</b><br>
+                                                            <span class="c">content</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                                
+                                                <!-- End Item -->
+                                        </div>
+                    <!-- End Carousel Inner -->
+                    <!-- scroll ends-->               
+                                        <div class="controls">
+                                            <ul class="text-center list-inline">
+                                                <li data-target="#custom_carousel" data-slide-to="0" class="active">
+                                                   <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
+                                                </li>
+                                                <li data-target="#custom_carousel" data-slide-to="1">
+                                                    <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
+                                                </li>
+                                                <li data-target="#custom_carousel" data-slide-to="2">
+                                                    <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
+                                                </li>                                                    
+                                            </ul>
+                                        </div> 
+                                        <script>
+                                            $(document).ready(function (ev) {
+                                            $('#custom_carousel').on('slide.bs.carousel', function (evt) {
+                                            $('#custom_carousel .controls li.active').removeClass('active');
+                                            $('#custom_carousel .controls li:eq(' + $(evt.relatedTarget).index() + ')').addClass('active');
+                                             })
+                                            });
+                                        </script>
                                     </div>
                                 </div>
                             </div>
